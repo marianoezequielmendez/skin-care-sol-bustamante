@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+* {
+  font-family: "PT Serif", serif;
+}
+
+.navbar {
+  background-color: #fbf1e4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo-navbar {
+  margin-left: 5%;
+}
+
+.active span {
+  padding: 100% 5px 60%;
+  background-color: #bd9b77;
+  color: white;
+}
+
+.navbar__text--size {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 991px) {
+  .d-hidden {
+    display: none !important;
+  }
+  .active span {
+    padding: 0;
+    background-color: #fbf1e4;
+    color: black;
+  }
+  .navbar-nav {
+    width: 100vw;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
