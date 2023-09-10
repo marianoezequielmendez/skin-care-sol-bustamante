@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <div class="col-6 col-lg-4">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="#home">
                 <img
                   class="logo-navbar"
                   src="./img/logo.png"
@@ -44,23 +44,23 @@
             <div class="col-6 col-lg-4">
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
+                  <li id="about_btn" class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about"
                       ><span class="navbar__text--size">Quién Soy</span></a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"
-                      ><span class="navbar__text--size">Clientes</span></a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"
+                  <li id="servicios_btn" class="nav-item">
+                    <a class="nav-link" href="#servicios"
                       ><span class="navbar__text--size">Servicios</span></a
                     >
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"
+                  <li id="clientes_btn" class="nav-item">
+                    <a class="nav-link" href="#clientes"
+                      ><span class="navbar__text--size">Clientes</span></a
+                    >
+                  </li>
+                  <li id="contactos_btn" class="nav-item">
+                    <a class="nav-link" href="#contactos"
                       ><span class="navbar__text--size">Contacto</span></a
                     >
                   </li>
@@ -74,7 +74,141 @@
         </nav>
       </header>
       <main>
-        <h1>PRÓXIMAMENTE!</h1>
+        <section id="home" class="home">
+          <div>
+            <h2 class="home__titulo">Lic.</h2>
+            <h2 class="home__titulo">Soledad Bustamante</h2>
+            <h3 class="home__slogan">Decile Hola A Tu Piel</h3>
+            <button class="btn btn__soledad">Conocé más</button>
+          </div>
+        </section>
+        <section id="about" class="about">
+          <div class="section__title--container">
+            <h2 class="section__title">Quién Soy</h2>
+            <h4 class="section__subtitle">Un poco sobre mí</h4>
+          </div>
+          <article class="about__main--container">
+            <div class="about__text--container">
+              <h4 class="about__text__title">Lic. Soledad Bustamante</h4>
+              <p class="about__text__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates hic repellat, repellendus ducimus veniam omnis
+                expedita et, eligendi ipsum velit voluptatibus cumque
+                perspiciatis odio corrupti dolorum asperiores excepturi
+                provident exercitationem impedit pariatur unde sint laboriosam
+                molestiae mollitia. Quisquam dignissimos consequatur deleniti
+                facere id veritatis commodi! Facilis adipisci earum deserunt
+                autem?
+              </p>
+              <button class="btn btn__soledad">Mis Trabajos</button>
+            </div>
+            <div class="about__image--container">
+              <img
+                src="./img/about/img-sol-bustamante.png"
+                alt="Fotografía de Soledad Bustamante"
+              />
+            </div>
+          </article>
+        </section>
+        <section id="servicios" class="servicios">
+          <div class="section__title--container">
+            <h2 class="section__title">Servicios</h2>
+            <h4 class="section__subtitle">Todo lo que estas buscando</h4>
+          </div>
+          <div class="servicios__main--container">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./img/clientes/cliente_03.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn__soledad--card">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="./img/clientes/cliente_02.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn__soledad--card">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="./img/clientes/cliente_01.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn__soledad--card">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="clientes" class="clientes">
+          <div class="section__title--container">
+            <h2 class="section__title">Clientes</h2>
+            <h4 class="section__subtitle">
+              Mi objetivo es la satifacción de ellas
+            </h4>
+          </div>
+          <div class="cliente__images--container">
+            <img
+              src="./img/clientes/cliente_01.png"
+              alt="Imagen de cliente recibiendo un masaje facial."
+            />
+            <img
+              src="./img/clientes/cliente_02.png"
+              alt="Imagen de cliente sonriendo con crema anti-age."
+            />
+            <img
+              src="./img/clientes/cliente_03.png"
+              alt="Imagen de cliente disfrutando de la radio frecuencia."
+            />
+          </div>
+        </section>
+        <section id="contactos" class="contactos">
+          <div class="section__title--container">
+            <h2 class="section__title">Contactos</h2>
+            <h4 class="section__subtitle">No dudes en consultar</h4>
+          </div>
+          <div class="contactos__main--container">
+            <div class="contactos__imagen-container">
+              <img
+                src="./img/contactos/img-news-container.png"
+                alt="Consulta Turnos"
+              />
+            </div>
+            <div class="contactos__datos--container">
+              <div class="contactos__dato--container">
+                <h5>Teléfono</h5>
+                <h6>11-5555-5555</h6>
+              </div>
+              <div class="contactos__dato--container">
+                <h5>Instagram</h5>
+                <h6>@solbustamante_skincare</h6>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="text-center text-lg-start text-white">
         <div class="container p-4 pb-0">
@@ -118,7 +252,7 @@
             </div>
           </section>
 
-          <hr class="my-3" />
+          <!-- <hr class="my-3" />
 
           <section class="p-3 pt-0">
             <div class="row d-flex align-items-center">
@@ -132,7 +266,7 @@
               </div>
 
               <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <!-- Facebook -->
+                
                 <a
                   class="btn btn-outline-light btn-floating m-1"
                   class="text-white"
@@ -140,7 +274,7 @@
                   ><i class="fab fa-facebook-f"></i
                 ></a>
 
-                <!-- Google -->
+                
                 <a
                   class="btn btn-outline-light btn-floating m-1"
                   class="text-white"
@@ -148,7 +282,7 @@
                   ><i class="fab fa-google"></i
                 ></a>
 
-                <!-- Instagram -->
+                
                 <a
                   class="btn btn-outline-light btn-floating m-1"
                   class="text-white"
@@ -157,7 +291,7 @@
                 ></a>
               </div>
             </div>
-          </section>
+          </section> -->
         </div>
       </footer>
     </div>
@@ -167,5 +301,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

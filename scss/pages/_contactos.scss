@@ -1,0 +1,31 @@
+.contactos__main--container {
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-around;
+
+  .contactos__imagen-container {
+    width: 30vw;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .contactos__datos--container {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h5 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #bd9b77;
+    }
+
+    h6 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,6 +1,11 @@
 .navbar {
   background-color: #fbf1e4;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
 .logo-navbar {
@@ -8,9 +13,8 @@
 }
 
 .active span {
-  padding: 100% 5px 60%;
-  background-color: #bd9b77;
-  color: white;
+  color: #bd9b77;
+  text-decoration: underline #bd9b77;
 }
 
 .navbar__text--size {
@@ -31,5 +35,58 @@
   .navbar-nav {
     width: 100vw;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .d-hidden {
+    display: none !important;
+  }
+
+  .active span {
+    padding: 0;
+    background-color: #fbf1e4;
+    color: black;
+  }
+
+  .navbar-nav {
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1353px) {
+  .navbar__text--size {
+    font-size: 1.2rem;
+  }
+
+  .active span {
+    padding: 100% 5px 70%;
+    background-color: #bd9b77;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1197px) {
+  .navbar__text--size {
+    font-size: 1rem;
+  }
+
+  .active span {
+    padding: 100% 5px 82%;
+    background-color: #bd9b77;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1041px) {
+  .navbar__text--size {
+    font-size: 0.8rem;
+  }
+
+  .active span {
+    padding: 120% 5px 100%;
+    background-color: #bd9b77;
+    color: white;
   }
 }

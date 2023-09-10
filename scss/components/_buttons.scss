@@ -1,0 +1,37 @@
+.btn__soledad {
+  width: 20vw;
+  text-transform: uppercase;
+  background-color: #bd9b77;
+  color: #f3f3f3;
+
+  &:hover {
+    border: 0.3px solid #3c3c3c;
+  }
+
+  &--card {
+    text-transform: uppercase;
+    background-color: #bd9b77;
+    color: #f3f3f3;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .home {
+    div {
+      .btn__soledad {
+        width: 50vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .home {
+    div {
+      .btn__soledad {
+        width: 30vw;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

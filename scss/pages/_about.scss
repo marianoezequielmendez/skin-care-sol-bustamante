@@ -1,0 +1,21 @@
+.about {
+  background-color: #fbf1e4;
+}
+
+.about__main--container {
+  display: flex;
+  justify-content: space-evenly;
+
+  .about__text--container {
+    width: 30vw;
+    padding-bottom: 3rem;
+  }
+
+  .about__image--container {
+    width: 15vw;
+
+    img {
+      width: 100%;
+    }
+  }
+}

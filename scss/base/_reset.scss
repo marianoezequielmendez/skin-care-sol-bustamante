@@ -4,3 +4,11 @@
   box-sizing: border-box;
   list-style: none;
 }
+
+body {
+  background-color: #fefaf9;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+  top: 10vh;
+}
